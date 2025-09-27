@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Check - BiomStudio</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .check { margin: 10px 0; padding: 10px; border: 1px solid #ddd; }
+        .success { background: #d4edda; border-color: #c3e6cb; }
+        .error { background: #f8d7da; border-color: #f5c6cb; }
+        .loading { background: #fff3cd; border-color: #ffeaa7; }
+    </style>
+</head>
+<body>
+    <h1>🔍 BiomStudio File Check</h1>
+    <p>This page will help diagnose CSS/JS loading issues.</p>
+    
+    <div id="results"></div>
+    
+    <script>
+        function checkFile(url, name) {
+            return new Promise((resolve) => {
+                const img = new Image();
+                img.onload = () => resolve({ name, status: 'success', url });
+                img.onerror = () => {
+                    fetch(url)
+                        .then(response => {
+                            if (response.ok) {
+                                resolve({ name, status: 'success', url });
+                            } else {
+                                resolve({ name, status: 'error', url, error: response.status });
+                            }
+                        })
+                        .catch(() => resolve({ name, status: 'error', url, error: 'Network error' }));
+                };
+                img.src = url;
+            });
+        }
+        
+        async function runChecks() {
+            const results = document.getElementById('results');
+            const baseUrl = window.location.origin + window.location.pathname.replace('check-files.html', '');
+            
+            const files = [
+                { url: baseUrl + 'css/style.css', name: 'CSS File' },
+                { url: baseUrl + 'js/main.js', name: 'JavaScript File' },
+                { url: baseUrl + 'index.html', name: 'Homepage' },
+                { url: baseUrl + 'about.html', name: 'About Page' },
+                { url: baseUrl + 'portfolio.html', name: 'Portfolio Page' },
+                { url: baseUrl + 'services.html', name: 'Services Page' },
+                { url: baseUrl + 'blog.html', name: 'Blog Page' },
+                { url: baseUrl + 'contact.html', name: 'Contact Page' }
+            ];
+            
+            for (const file of files) {
+                const result = await checkFile(file.url, file.name);
+                const div = document.createElement('div');
+                div.className = `check ${result.status}`;
+                
+                if (result.status === 'success') {
+                    div.innerHTML = `✅ ${result.name}: <a href="${result.url}" target="_blank">${result.url}</a>`;
+                } else {
+                    div.innerHTML = `❌ ${result.name}: ${result.error || 'Not found'} - <a href="${result.url}" target="_blank">${result.url}</a>`;
+                }
+                
+                results.appendChild(div);
+            }
+            
+            // Check if CSS is actually loaded
+            const cssLoaded = document.querySelector('link[href*="style.css"]') ? 'Yes' : 'No';
+            const jsLoaded = document.querySelector('script[src*="main.js"]') ? 'Yes' : 'No';
+            
+            const summary = document.createElement('div');
+            summary.className = 'check';
+            summary.innerHTML = `
+                <h3>📊 Summary</h3>
+                <p><strong>CSS Loaded:</strong> ${cssLoaded}</p>
+                <p><strong>JS Loaded:</strong> ${jsLoaded}</p>
+                <p><strong>Current URL:</strong> ${window.location.href}</p>
+                <p><strong>Base URL:</strong> ${baseUrl}</p>
+            `;
+            results.appendChild(summary);
+        }
+        
+        runChecks();
+    </script>
+</body>
+</html>

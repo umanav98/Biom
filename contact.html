@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BiomStudio Architecture</title>
+    <meta name="description" content="Get in touch with BiomStudio for your architectural project. Contact us for consultations, project inquiries, and expert advice on sustainable design solutions.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">BiomStudio</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(135deg, #4ECDC4 0%, #FF6B6B 100%); padding: 120px 0 80px;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Get In Touch</h1>
+                <p>Ready to start your next architectural project? We'd love to hear from you and discuss how we can bring your vision to life.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <p style="margin-bottom: 2rem; color: #7F8C8D;">Fill out the form below and we'll get back to you within 24 hours.</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="project-type">Project Type</label>
+                            <select id="project-type" name="project-type" style="width: 100%; padding: 12px 15px; border: 2px solid #ECF0F1; border-radius: 10px; font-size: 1rem;">
+                                <option value="">Select Project Type</option>
+                                <option value="residential">Residential</option>
+                                <option value="commercial">Commercial</option>
+                                <option value="institutional">Institutional</option>
+                                <option value="renovation">Renovation</option>
+                                <option value="consultation">Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Project Budget</label>
+                            <select id="budget" name="budget" style="width: 100%; padding: 12px 15px; border: 2px solid #ECF0F1; border-radius: 10px; font-size: 1rem;">
+                                <option value="">Select Budget Range</option>
+                                <option value="under-50k">Under $50,000</option>
+                                <option value="50k-100k">$50,000 - $100,000</option>
+                                <option value="100k-250k">$100,000 - $250,000</option>
+                                <option value="250k-500k">$250,000 - $500,000</option>
+                                <option value="500k-1m">$500,000 - $1,000,000</option>
+                                <option value="over-1m">Over $1,000,000</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="timeline">Project Timeline</label>
+                            <select id="timeline" name="timeline" style="width: 100%; padding: 12px 15px; border: 2px solid #ECF0F1; border-radius: 10px; font-size: 1rem;">
+                                <option value="">Select Timeline</option>
+                                <option value="asap">ASAP</option>
+                                <option value="1-3-months">1-3 months</option>
+                                <option value="3-6-months">3-6 months</option>
+                                <option value="6-12-months">6-12 months</option>
+                                <option value="over-12-months">Over 12 months</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Description *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project, goals, and any specific requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p style="margin-bottom: 2rem; color: #7F8C8D;">We're here to help with all your architectural needs. Reach out to us through any of the channels below.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>info@biomstudio.com</p>
+                            <p>projects@biomstudio.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 123-4567</p>
+                            <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Visit Our Office</h4>
+                            <p>123 Design Street<br>
+                            Creative City, CC 12345<br>
+                            United States</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div>
+                            <h4>Social Media</h4>
+                            <p>Follow us for project updates and inspiration</p>
+                            <div style="margin-top: 1rem;">
+                                <a href="#" style="margin-right: 1rem; color: #4ECDC4; text-decoration: none;">Instagram</a>
+                                <a href="#" style="margin-right: 1rem; color: #4ECDC4; text-decoration: none;">LinkedIn</a>
+                                <a href="#" style="color: #4ECDC4; text-decoration: none;">Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Office Hours -->
+                    <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; margin-top: 2rem;">
+                        <h3 style="color: #FF6B6B; margin-bottom: 1rem;">Office Hours</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                            <p><strong>Monday - Friday:</strong></p>
+                            <p>9:00 AM - 6:00 PM</p>
+                            <p><strong>Saturday:</strong></p>
+                            <p>10:00 AM - 4:00 PM</p>
+                            <p><strong>Sunday:</strong></p>
+                            <p>Closed</p>
+                        </div>
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: #7F8C8D;">* Emergency consultations available by appointment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Find Us</h2>
+                <p>Visit our office in the heart of Creative City</p>
+            </div>
+            <div style="background: #ddd; height: 400px; border-radius: 15px; display: flex; align-items: center; justify-content: center; color: #7F8C8D; font-size: 1.2rem;">
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🗺️</div>
+                    <p>Interactive Map</p>
+                    <p style="font-size: 1rem; margin-top: 0.5rem;">123 Design Street, Creative City, CC 12345</p>
+                    <p style="font-size: 0.9rem; margin-top: 1rem;">* Map integration would be implemented here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions about our services</p>
+            </div>
+            <div class="grid grid-2">
+                <div class="card">
+                    <h4>How much does an architectural consultation cost?</h4>
+                    <p>Our initial consultation is free for projects over $50,000. For smaller projects, we offer a $200 consultation fee that can be applied to your project if you choose to work with us.</p>
+                </div>
+                <div class="card">
+                    <h4>How long does the design process take?</h4>
+                    <p>Design timelines vary by project complexity. A simple residential project typically takes 3-6 months, while larger commercial projects can take 12-18 months from concept to construction completion.</p>
+                </div>
+                <div class="card">
+                    <h4>Do you work on projects outside your local area?</h4>
+                    <p>Yes, we work on projects nationwide. While we're based in Creative City, we regularly travel for projects and can coordinate remotely for certain phases of the design process.</p>
+                </div>
+                <div class="card">
+                    <h4>What information should I bring to the initial consultation?</h4>
+                    <p>Bring your project ideas, site information (if available), budget range, timeline, and any inspiration images. The more information you provide, the better we can understand your vision.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%); color: white; text-align: center;">
+        <div class="container">
+            <h2>Ready to Start Your Project?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; color: rgba(255,255,255,0.9);">Don't wait - let's discuss your vision and create something extraordinary together.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="tel:+15551234567" class="btn" style="background: #FFE66D; color: #2C3E50;">Call Now</a>
+                <a href="mailto:info@biomstudio.com" class="btn btn-secondary">Email Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BiomStudio</h3>
+                    <p>Creating innovative, sustainable architecture that harmonizes with nature and enhances human experience.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="services.html">Architectural Design</a></li>
+                        <li><a href="services.html">Sustainable Design</a></li>
+                        <li><a href="services.html">Interior Design</a></li>
+                        <li><a href="services.html">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📧 info@biomstudio.com</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                    <p>📍 123 Design Street, Creative City, CC 12345</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BiomStudio. All rights reserved. | Designed with ❤️ for sustainable architecture</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+📁 Files to Upload to GitHub:
+
+ROOT FOLDER:
+✅ index.html
+✅ about.html
+✅ portfolio.html
+✅ services.html
+✅ blog.html
+✅ contact.html
+
+CSS FOLDER:
+✅ css/style.css
+
+JS FOLDER:
+✅ js/main.js
+
+IMAGES FOLDER:
+✅ images/projects/ (empty folder - ready for your images)
+
+ADDITIONAL FILES:
+✅ DEPLOYMENT-GUIDE.md
+✅ FILES-TO-UPLOAD.txt
+✅ test-website.bat
+
+Total: 9 files + 3 folders

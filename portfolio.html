@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - BiomStudio Architecture</title>
+    <meta name="description" content="Explore BiomStudio's portfolio of innovative architecture projects. From sustainable residential designs to cutting-edge commercial buildings.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">BiomStudio</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(135deg, #FFE66D 0%, #FF6B6B 100%); padding: 120px 0 80px;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Portfolio</h1>
+                <p>Discover our innovative architectural solutions that blend sustainability, functionality, and aesthetic excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="section" style="padding: 40px 0; background-color: #f8f9fa;">
+        <div class="container">
+            <div style="text-align: center;">
+                <div style="display: inline-flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                    <button class="btn filter-btn active" data-filter="all">All Projects</button>
+                    <button class="btn filter-btn" data-filter="residential">Residential</button>
+                    <button class="btn filter-btn" data-filter="commercial">Commercial</button>
+                    <button class="btn filter-btn" data-filter="institutional">Institutional</button>
+                    <button class="btn filter-btn" data-filter="sustainable">Sustainable</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="residential sustainable">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="EcoVilla Residences - Sustainable residential complex">
+                    <div class="portfolio-overlay">
+                        <h3>EcoVilla Residences</h3>
+                        <p>LEED Platinum certified residential complex featuring solar panels, rainwater harvesting, and green roofs.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="TechHub Office Complex - Modern commercial building">
+                    <div class="portfolio-overlay">
+                        <h3>TechHub Office Complex</h3>
+                        <p>Innovative workspace design with flexible layouts, natural lighting, and collaborative spaces for tech companies.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="institutional sustainable">
+                    <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Green Community Center - Sustainable community building">
+                    <div class="portfolio-overlay">
+                        <h3>Green Community Center</h3>
+                        <p>Multi-purpose community facility with geothermal heating, living walls, and sustainable materials throughout.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="residential">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Modern Family Home - Contemporary residential design">
+                    <div class="portfolio-overlay">
+                        <h3>Modern Family Home</h3>
+                        <p>Contemporary single-family residence featuring open floor plans, large windows, and seamless indoor-outdoor living.</p>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="commercial sustainable">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Sustainable Retail Complex - Eco-friendly shopping center">
+                    <div class="portfolio-overlay">
+                        <h3>Sustainable Retail Complex</h3>
+                        <p>Mixed-use development combining retail, dining, and office spaces with integrated renewable energy systems.</p>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item" data-category="institutional">
+                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Innovation Campus - Educational facility">
+                    <div class="portfolio-overlay">
+                        <h3>Innovation Campus</h3>
+                        <p>State-of-the-art educational facility designed to foster creativity and collaboration among students and researchers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details Section -->
+    <section class="section" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Project Details</h2>
+                <p>In-depth look at some of our most innovative designs</p>
+            </div>
+            <div class="grid grid-2">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="EcoVilla Residences detailed view">
+                    <div style="padding: 2rem;">
+                        <h3>EcoVilla Residences</h3>
+                        <p><strong>Location:</strong> Portland, Oregon</p>
+                        <p><strong>Year:</strong> 2023</p>
+                        <p><strong>Size:</strong> 45,000 sq ft</p>
+                        <p><strong>Certification:</strong> LEED Platinum</p>
+                        <p>This groundbreaking residential complex features 24 units designed around a central courtyard. Each unit includes solar panels, rainwater collection systems, and energy-efficient appliances. The building's orientation maximizes natural light while minimizing heat gain.</p>
+                        <ul style="margin-top: 1rem;">
+                            <li>• 100% renewable energy</li>
+                            <li>• 40% reduction in water usage</li>
+                            <li>• Green roof with native plants</li>
+                            <li>• Electric vehicle charging stations</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="TechHub Office Complex detailed view">
+                    <div style="padding: 2rem;">
+                        <h3>TechHub Office Complex</h3>
+                        <p><strong>Location:</strong> San Francisco, California</p>
+                        <p><strong>Year:</strong> 2022</p>
+                        <p><strong>Size:</strong> 120,000 sq ft</p>
+                        <p><strong>Certification:</strong> LEED Gold</p>
+                        <p>Designed specifically for technology companies, this office complex features flexible workspaces, collaborative areas, and cutting-edge technology integration. The building's design promotes innovation and employee well-being.</p>
+                        <ul style="margin-top: 1rem;">
+                            <li>• Smart building automation</li>
+                            <li>• Flexible workspace configurations</li>
+                            <li>• Rooftop garden and recreation area</li>
+                            <li>• Advanced air filtration systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Design Process</h2>
+                <p>How we bring your vision to life</p>
+            </div>
+            <div class="grid grid-4">
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem; color: #FF6B6B;">1️⃣</div>
+                    <h3>Discovery</h3>
+                    <p>We begin by understanding your needs, site conditions, and project goals through detailed consultation and analysis.</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem; color: #4ECDC4;">2️⃣</div>
+                    <h3>Concept Design</h3>
+                    <p>Our team develops initial design concepts that address your requirements while incorporating sustainable principles.</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem; color: #FFE66D;">3️⃣</div>
+                    <h3>Development</h3>
+                    <p>We refine the design through multiple iterations, incorporating feedback and technical requirements.</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem; color: #95E1D3;">4️⃣</div>
+                    <h3>Implementation</h3>
+                    <p>We provide comprehensive construction documentation and support throughout the building process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" style="background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%); color: white;">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: white;">Client Testimonials</h2>
+                <p style="color: rgba(255,255,255,0.9);">What our clients say about working with us</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card" style="background: rgba(255,255,255,0.1); color: white; border: none;">
+                    <p style="font-style: italic; margin-bottom: 1rem;">"BiomStudio transformed our vision into reality. Their attention to sustainability and detail is unmatched. The EcoVilla project exceeded all our expectations."</p>
+                    <h4 style="color: #FFE66D;">- Jennifer Martinez</h4>
+                    <p style="color: rgba(255,255,255,0.8);">Property Developer</p>
+                </div>
+                <div class="card" style="background: rgba(255,255,255,0.1); color: white; border: none;">
+                    <p style="font-style: italic; margin-bottom: 1rem;">"Working with BiomStudio was a game-changer for our company. The TechHub office has improved our team's productivity and well-being significantly."</p>
+                    <h4 style="color: #FFE66D;">- Robert Chen</h4>
+                    <p style="color: rgba(255,255,255,0.8);">CEO, TechStart Inc.</p>
+                </div>
+                <div class="card" style="background: rgba(255,255,255,0.1); color: white; border: none;">
+                    <p style="font-style: italic; margin-bottom: 1rem;">"The Green Community Center has become the heart of our neighborhood. BiomStudio's design perfectly balances functionality with environmental responsibility."</p>
+                    <h4 style="color: #FFE66D;">- Maria Rodriguez</h4>
+                    <p style="color: rgba(255,255,255,0.8);">Community Director</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="text-align: center;">
+        <div class="container">
+            <h2>Ready to Start Your Project?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Let's discuss how we can create something extraordinary for you.</p>
+            <a href="contact.html" class="btn">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BiomStudio</h3>
+                    <p>Creating innovative, sustainable architecture that harmonizes with nature and enhances human experience.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="services.html">Architectural Design</a></li>
+                        <li><a href="services.html">Sustainable Design</a></li>
+                        <li><a href="services.html">Interior Design</a></li>
+                        <li><a href="services.html">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📧 info@biomstudio.com</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                    <p>📍 123 Design Street, Creative City, CC 12345</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BiomStudio. All rights reserved. | Designed with ❤️ for sustainable architecture</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <img src="" alt="">
+            <button class="lightbox-close">&times;</button>
+            <button class="lightbox-nav lightbox-prev">‹</button>
+            <button class="lightbox-nav lightbox-next">›</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Portfolio filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all') {
+                            item.style.display = 'block';
+                        } else {
+                            const categories = item.getAttribute('data-category').split(' ');
+                            if (categories.includes(filterValue)) {
+                                item.style.display = 'block';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
